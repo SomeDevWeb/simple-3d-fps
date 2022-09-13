@@ -4,7 +4,7 @@ import Level from '../../base/Level';
 export default class CreditsLevel extends Level {
 
     setupAssets() {
-        this.assets.addMusic('music', '/assets/musics/music.mp3');
+        this.assets.addMusic('music', 'assets/musics/music.mp3');
     }
 
     buildScene() {
@@ -13,14 +13,14 @@ export default class CreditsLevel extends Level {
 
         // Make this scene transparent to see the background
         this.scene.clearColor = new BABYLON.Color4(0,0,0,0);
- 
+
         this.makeUI();
 
     }
 
     makeUI() {
         var ui = new UI('creditsUI');
-        
+
         ui.addText('Design and Code by Tiago Silva Pereira Rodrigues\nkingofcode.com.br\n\n\n', {
             'top': '30px',
             'fontSize': '20px',
